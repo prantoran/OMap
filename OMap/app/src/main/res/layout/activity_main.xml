@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear"
+    style="@style/noSwipe">
+
+    <FrameLayout
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="-40dp"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all">
+
+        <org.osmdroid.views.MapView android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
